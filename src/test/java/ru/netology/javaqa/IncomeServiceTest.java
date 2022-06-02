@@ -28,4 +28,28 @@ public class IncomeServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldGetPocketMoney() {
+        IncomeService service = new IncomeService();
+
+        int age = 15;
+
+        int actual = service.calcIncome(age);
+        int expected = 1000;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldGetPension() {
+        IncomeService service = new IncomeService();
+
+        int age = 85;
+
+        int actual = service.calcIncome(age);
+        int expected = 20_000;
+
+        Assertions.assertEquals(expected, actual);
+    }
 }

@@ -13,10 +13,11 @@ public class IncomeService {
         if (age  < 80) {
             return 50_000;
         }
-        if (age >= 80) {
-            return  20_000;
-        }
-        return  -1;
+//        if (age >= 80) {
+//            return  20_000;
+//        }
+//       return  -1;
+        return 20_000;
 
     }
 
